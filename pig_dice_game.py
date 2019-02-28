@@ -1,8 +1,6 @@
 import random
 
 
-class RolledOneException(Exception):
-    pass
 
 
 class Die:
@@ -14,10 +12,7 @@ class Die:
     def roll(self):
         """Returns the rolled dice, or raises RolledOneException if 1."""
 
-        self.value = random.randint(1, 6)
-        if self.value == 1:
-            raise RolledOneException
-
+       
         return self.value
 
 class HumanPlayer(object):
