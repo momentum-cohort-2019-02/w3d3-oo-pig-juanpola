@@ -1,24 +1,37 @@
-class = player 
+class =  CPU
+        - will go against human_player 
+        give the cpu a name?
 
 
-class = human_player  user)
+
+class = HumanPlayer(s)  (user)
     - will play the game 
-    - will tell the game if they want to hold or roll again
-    - rolls die 
+    - rollsdie 
+    - choose to Hold
     - will ask for name for each player playing ?
 
 
-class = die 
-            - this will be what the player will be playing with.
+Class = Die 
+            - probability 
+            - this will be what the player will play the game with( will be played by the user )
             - also returns the dice 
-
-class = score box
-            -will keep track of the current score for each player 
+            - will have 6 sides 
 
 
-class = Main Game 
+
+class = ScoreBox
+            
+            - will update each human_player score . 
+            - amount of atempts ? 
+            - will tell main game when ever human_player or CPU gets to 100
+
+
+class = MainGame 
+            - 
             - will run the game 
             - will ask for human_player name . 
+            - will run the die ?
+            
 
 
 
